@@ -1,0 +1,62 @@
+body {
+   font-family: 'oswald';
+}
+.image{
+  background-image: url("http://www.tegonity.com/wp-content/uploads/2016/02/android-wallpaper.jpg");
+  min-height:550px;
+  background-size: 100%;
+  overflow: repeat;
+  color: white;
+  border-radius:10px;
+}
+.header {
+  padding: 10px;
+  font-size: 100%;
+  text-align: center;
+}
+.thumbnail {
+  border-radius: 5px;
+    padding: 10px;
+  background-color: black;
+  opacity: 0.9;
+  height: 15%;
+
+}
+.footer {
+  display: inline;
+   color: white;
+  margin-top: 5%;
+padding: 10px;
+}
+.container {
+  display: inline;
+  margin-left: 70%;
+  font-size: 130%;
+}
+.intro{
+    margin-left: 30%;
+  font-size: 20px;
+  color:  #c5d5c5;
+}
+.projects{
+
+  padding: 10px;
+  font-size: 20px;
+  border-width: 5px;
+  border: 2px dashed black;
+  background-color: #39D1B4;
+  width: 50%;
+  margin-left: 30px;
+  height: auto;
+  color: black;
+}
+ul li{
+  margin: 10px;
+}
+.skillset {
+    margin-left: 20%;
+}
+.projects-button {
+
+
+}
