@@ -1,5 +1,4 @@
 body {
-   font-family: Arial;
    background-image: url("http://www.tegonity.com/wp-content/uploads/2016/02/android-wallpaper.jpg");
   min-height:550px;
   background-size: 100%;
@@ -33,7 +32,7 @@ body {
 padding: 10px;
 }
 h3 {
-  margin-left: 37%;
+  margin-left: 40%;
 }
 .container {
 
@@ -74,7 +73,7 @@ border: 2px solid black;
 border-radius: 5px;
 width: 80px;
 height: 30px;
-padding-left: 3px;
+padding-left: 5px;
 background-color: black;
 color: white;
 margin-left: 43%;
