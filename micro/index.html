@@ -33,10 +33,9 @@
           </div>
        <div class='skillset'>
       
-          <div ng-click="toggle()"><img ng-src="{{ day.picture.medium }}" class="img-circle" z-index="-2" height="200px" width="200px"></div>
-          <div class="message" ng-show="show == 'msg1'"></div>
-          <div class="message" ng-show="show == 'msg2'">
-          <ul class='projects'>
+          <div ng-click="selected.index=$index"><img ng-src="{{ day.picture.medium }}" class="img-circle" z-index="-2" height="100px" width="100px"></div>
+          
+          <ul class='projects' ng-show="selected.index===$index">
             <li> NAME:Name: {{ day.name.title }} {{ day.name.first }} {{ day.name.last }}</li>
             <li> GENDER: {{ i.gender }} </li>
             <li>ADDRESS: {{ day.location.street }} {{ day.location.city }} {{ day.location.state }}</li>
@@ -47,7 +46,11 @@
            <li> PASSWORD: {{ day.login.password }}</li>
             <li> REGISTERED: {{ day.registered }} </li>
             <li> Md5: {{ day.login.md5 }}</li>
-          </ul>
+          
+	<div class="button">
+	<p ng-click="selected.index=$index+1">CLOSE</p>	
+	</div>
+	</ul>
 	</div>
     </div>
     </div>
@@ -55,7 +58,8 @@
 <div class="footer">
     <div class="thumbnail">
     <div class="container">
-     <b><h3>Project   by:   ANKIT SAINI </h3> </b><b> <a href="https://github.com/ankitsaini00">  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeE9xxUtYk4lFt3qePWWET5jqc-0362VQmzfjAImFjwYeA_w0Y" width="50px" height="50px"></a>    <a href="www.facebook.com/loving.ankit.14">  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpMJI3GdaXw7_DfMu68ywj0WjpHZY3O2VHNI7toJnljeTjr73k" width="50px" height="50px">  </a></i>
+     <b><h3>Project   by:   ANKIT SAINI </h3> </b><b> <a href="https://github.com/ankitsaini00">  <img src="img/fb.ico" width="4%" height="4%"></a>    <a href="www.facebook.com/loving.ankit.14">  <img src="img/git.png
+" width="5%" height="5%">  </a></i>
       </div>
     </div>
   </div>
