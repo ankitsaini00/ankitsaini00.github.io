@@ -1,0 +1,147 @@
+html{
+	margin=0;
+	padding=0;
+}
+body{
+	font-family: 'Handlee', cursive;
+	font-size: 20pt;
+	background-color: #efefef;
+	padding: 10px;
+	margin: 0;
+	color: white;
+}
+h1{
+	font-size: 35pt;
+	color: #20bcd5;
+	text-align: center;
+	padding: 18px 0 18px 0;
+	margin: 0 0 10px 0;
+}
+h1 span{
+	border: 4px dashed #20bcd5;
+	border-radius: 15%;
+	background-color: ;
+	padding: 10px;
+}
+.section {
+	background-color: black;
+	padding: 15px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+#header{
+	height: 700px;
+	background-image: url("https://c.slashgear.com/wp-content/uploads/2013/07/slafadevelopers.jpg");
+	background-attachment: fixed;
+	overflow: hidden;
+	background-size: cover;
+	color: white;
+
+}
+.img-circle{
+	border: 3px solid white;
+	border-radius: 50%;
+	margin: 30%;
+}
+#img{
+	margin-top: 50px;
+}
+h5{
+	text-align: center;
+}
+h4{
+	float: right;
+	margin-top: -20px;
+}
+#header p{
+	margin-top: -350px;
+	font-size: 50pt;
+	font-family: 
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+li{
+	margin-bottom: 15px;
+	font-weight: bold;
+	margin-left: 50px;
+}
+progress{
+	width: 70%;
+	height: 30px;
+	color: #3fb6b2;
+	background: #efefef;
+	border-radius: 5px;
+}
+progress::-webkit-progress-bar {
+	background: #efefef;
+}
+progress::-webkit-progress-bar {
+	background: #3fb6b2;
+}
+progress::-moz-progress-bar {
+	color: #3fb6b2;
+}
+iframe, audio{
+	display: inline-block;
+	margin: 0, auto;
+	border: 3px solid #3fb6b2;
+}
+form{
+	text-align: center;
+	margin-top: 0;
+}
+
+textarea {
+
+	height: 100px;
+}
+textarea p {
+	text-align: left;
+}
+input, textarea {
+	margin-bottom: 10px;
+	font-size: 20pt;
+	padding: 15px 10px 10px;
+	border: 1px solid #cecece;
+	background-color: #efefef;
+	color: #787575;
+	border-radius:  5px;
+	width: 50%;
+	outline: thick;
+
+}
+
+.submit:hover {
+	background-color: #43a09d;
+}
+#contacts img{
+	height: 50px;
+	width: 50px;
+	margin-left: 7px;
+	margin-right: 7px;
+}
+#contacts a{ 
+	text-decoration: none;
+}
+#contacts img:hover{
+	opacity: 0.8;
+}
+#contacts {
+	text-align: center;
+}
+.copyright{
+	font-size: 8pt;
+	text-align: right;
+	padding-bottom: 10px;
+	color: grey;
+}
+form img{
+	display: block;
+	margin-left: 45%;
+	margin-bottom: 10px;
+	height: 80px;
+	width: 80px;
+}
+
+
