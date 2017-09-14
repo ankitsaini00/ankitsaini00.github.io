@@ -160,6 +160,15 @@ progress{
 	border: 2px solid white;
 	border-radius: 5px;
 }
+progress::-webkit-progress-bar {
+	background: #efefef;
+}
+progress::-webkit-progress-bar {
+	background: #3fb6b2;
+}
+progress::-moz-progress-bar {
+	color: #3fb6b2;
+}
 .section2{
 	background-image: url("img/section2.jpg");
 	background-attachment: fixed;
