@@ -25,23 +25,19 @@ h1 span{
 }
 .section {
 	background-color: black;
-	padding: 15px;
+	padding: 10px;
 	margin-bottom: 20px;
 	border-radius: 10px;
 }
 #header{
 	height: 700px;
-	background-image: url("https://c.slashgear.com/wp-content/uploads/2013/07/slafadevelopers.jpg");
-	background-attachment: fixed;
-	overflow: hidden;
-	background-size: cover;
 	color: white;
 
 }
 .img-circle{
 	border: 3px solid white;
 	border-radius: 50%;
-	margin: 30%;
+	
 }
 #img{
 	margin-top: 50px;
@@ -54,7 +50,7 @@ h4{
 	margin-top: -20px;
 }
 #header p{
-	margin-top: -350px;
+	
 	font-size: 50pt;
 	font-family: 
 	color: white;
