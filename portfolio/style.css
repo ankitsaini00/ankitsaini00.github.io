@@ -206,7 +206,7 @@ body{
 
 .data{
 	color:white;
-position: absolute;
+    position: absolute;
     z-index: 9999;
      color: white;
          padding: 53px 0 80px;
