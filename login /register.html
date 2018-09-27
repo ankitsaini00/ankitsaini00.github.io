@@ -30,7 +30,7 @@ body{
 
 .loginbox11{
   width: 320px;
-  height: 420px;
+  height: 520px;
   background: rgba(0,0,0,0.9);
   border-radius: 10px;
   color: #fff;
@@ -66,21 +66,20 @@ h1{
   margin-bottom: 20px;
 
 }
-.loginbox11 input[type="text"], input[type="password"]{
+.loginbox11 input[type="text"], input[type="password"], input[type="email"]{
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 0.5px solid #fff;
   background: transparent;
   outline: none;
-  height: 40px;
+  height: 30px;
   color: #fff;
-  font-size: 16px;
+  font-size: 15px;
 }
 .loginbox11 input[type="submit"]{
   border: none;
   outline: none;
   height: 40px;
   width: 160px;
-  margin-top: 30px;
   margin-left: 50px; 
   background: #f57c00;
   color: #fff;
@@ -111,15 +110,20 @@ h1{
       <div class="model11">
         <div class="loginbox11">
           <img src="https://smvdu.ac.in/images/headers/logo-600.png" class="avatar11">
-          <h1>Login Here</h1>
+          <h1>Register Here</h1>
           <form>
-            <p>username</p>
-             <input type="text" name="" placeholder="Enter Username">
-             <p>password</p>
-             <input type="password" name="" placeholder="Enter Password">
-             <input type="submit" name="" value="Login">
+            <p>Name</p>
+             <input type="text" name="name" placeholder="Enter your name">
+             <p>Email</p>
+             <input type="email" name="email" placeholder="Enter your email">
+            <p>Username</p>
+             <input type="text" name="username" placeholder="Enter Username">
+             <p>Password</p>
+             <input type="password" name="password" placeholder="Enter Password">
+             <p>Confirm Password</p>
+             <input type="password" name="password" placeholder="confirm Password">
+             <input type="submit" name="" value="Signup">
              <br>
-             <a href="#">Don't have account</a>
           </form>
         </div>
       </div>
