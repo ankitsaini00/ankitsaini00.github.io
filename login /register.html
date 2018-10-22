@@ -11,10 +11,10 @@
     <link rel="stylesheet" type="text/css" href="">
   </head>
   <style>
-    
 
 
- 
+
+
 
 body{
   margin: 0;
@@ -22,7 +22,6 @@ body{
   background-image: url('https://image.ibb.co/f0T3rp/Whats_App_Image_2018_09_27_at_10_43_35_PM.jpg');
   background-size: cover;
   background-position: centre;
-  background-repeat: no-repeat;
   font-family: sans-serif;
 }
 
@@ -30,7 +29,7 @@ body{
 
 .loginbox11{
   width: 320px;
-  height: 520px;
+  height: 580px;
   background: rgba(0,0,0,0.9);
   border-radius: 10px;
   color: #fff;
@@ -80,7 +79,7 @@ h1{
   outline: none;
   height: 40px;
   width: 160px;
-  margin-left: 50px; 
+  margin-left: 50px;
   background: #f57c00;
   color: #fff;
   font-size: 20px;
@@ -111,7 +110,7 @@ h1{
         <div class="loginbox11">
           <img src="https://smvdu.ac.in/images/headers/logo-600.png" class="avatar11">
           <h1>Register Here</h1>
-          <form>
+          <form method='post', action='/users/register'>
             <p>Name</p>
              <input type="text" name="name" placeholder="Enter your name">
              <p>Email</p>
@@ -121,12 +120,15 @@ h1{
              <p>Password</p>
              <input type="password" name="password" placeholder="Enter Password">
              <p>Confirm Password</p>
-             <input type="password" name="password" placeholder="confirm Password">
-             <input type="submit" name="" value="Signup">
+             <input type="password" name="password2" placeholder="confirm Password">
+             <input type="submit" name="submit" value="Signup">
              <br>
+             <a href="/users/login">Login</a>
+
           </form>
         </div>
       </div>
     </div>
+    <b><%- messages() %></b>
   </body>
 </html>
