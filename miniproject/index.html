@@ -74,6 +74,103 @@ body {
 
 
 </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+ExecuteOrDelayUntilScriptLoaded(getUserProfileImage,'sp.js');
+
+var CamlResult;
+function getUserProfileImage(){
+    var clientContext = new SP.ClientContext.get_current();
+    var web = clientContext.get_web();
+    var userInfoList = web.get_siteUserInfoList();
+    var camlQuery = new SP.CamlQuery();
+
+    var userID = _spPageContextInfo.userId;
+
+    // define the query to retrieve the given user's details
+    camlQuery.set_viewXml('<View><Query><Where><Eq><FieldRef Name="ID"/><Value Type="Number">' + userID + '</Value></Eq></Where></Query><RowLimit>1</RowLimit></View>');
+
+    CamlResult = userInfoList.getItems(camlQuery);
+    clientContext.load(CamlResult);
+    clientContext.executeQueryAsync(Function.createDelegate(this, this.onQuerySucceeded),Function.createDelegate(this, this.onQueryFailed));
+}
+
+function onQuerySucceeded(sender, args){
+    var profile, title, login, email, pic, picUrl;
+
+    // There should be only result. Get the item at index 0
+    profile = CamlResult.itemAt(0); 
+
+    // read all the properties out
+
+    title = profile.get_item('Title');
+    login = profile.get_item("Name");
+    email = profile.get_item("EMail");
+    pic = profile.get_item('Picture');
+
+    if (pic) { 
+        picUrl = pic.get_url();
+    } 
+
+    // Setup HTML
+    document.getElementById('userLoginName').innerHTML = login;
+    document.getElementById('userTitle').innerHTML = title;
+    document.getElementById('userEmail').innerHTML = email;
+
+    if (picUrl) {
+        // create the image
+       $('#my_image').attr('src',picUrl);     
+    }
+    else {
+        document.getElementById('userPicture').innerHTML = "No image found in user profile";
+    }
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </head>
 
 <body>
@@ -131,6 +228,7 @@ body {
          </div>
 
          <div class="seven columns main-col">
+   
 
             <h2 style="color: white;">My Profile</h2><hr>
 
